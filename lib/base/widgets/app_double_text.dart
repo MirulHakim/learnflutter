@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:learning/base/res/styles/app_styles.dart';
-import 'package:learning/screens/all_tickets.dart';
 
 class AppDoubleText extends StatelessWidget {
   const AppDoubleText({super.key, required this.bigText, required this.smallText, required this.func});
