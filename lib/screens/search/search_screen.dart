@@ -1,7 +1,4 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:learning/base/res/media.dart';
 import 'package:learning/base/res/styles/app_styles.dart';
 import 'package:learning/base/widgets/app_double_text.dart';
 import 'package:learning/screens/search/widgets/app_text_icon.dart';
