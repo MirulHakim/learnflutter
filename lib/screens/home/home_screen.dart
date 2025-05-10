@@ -5,6 +5,7 @@ import 'package:learning/base/res/styles/app_styles.dart';
 import 'package:learning/base/utils/all_json.dart';
 import 'package:learning/base/widgets/app_double_text.dart';
 import 'package:learning/base/widgets/ticket_view.dart';
+import 'package:learning/screens/home/widgets/hotel.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -24,6 +25,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -70,7 +72,14 @@ class HomeScreen extends StatelessWidget {
                   )
                   ),
                 const SizedBox(height:40),
-                AppDoubleText(bigText: 'Hotels', smallText: 'View all', func: () => Navigator.pushNamed(context, AppRoutes.allTickets),),
+                AppDoubleText(bigText: 'Hotels', smallText: 'View all', func: () => print("hello there"),),
+                const SizedBox(height:20),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: hotelList.map((singleHotel) => Hotel(hotel: singleHotel)).toList(),
+                  )
+                ),
               ],
             ),
           ),
