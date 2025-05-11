@@ -154,7 +154,7 @@ class ExpandedTextWidget extends StatelessWidget {
           textWidget,
           GestureDetector(
             onTap: () {
-              controller.toogleExpansion();
+              controller.toggleExpansion();
             },
             child: Text(
               controller.isExpanded.value ? "Less" : "More",
