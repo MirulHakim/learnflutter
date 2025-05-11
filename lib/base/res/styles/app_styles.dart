@@ -12,6 +12,9 @@ class AppStyles{
   static Color planeColor = const Color(0xFFBFC2DF);
   static Color findTicketColor = const Color(0xD91130CE);
   static Color circleColor = const Color(0xFF189999);
+  static Color ticketWhite = const Color(0xFFFFFFFF);
+  static Color dotColor = const Color(0xFF8ACCF7);
+  static Color planeSecondColor = const Color(0xFFBACCF7);
 
   static TextStyle textStyle = TextStyle(
       fontSize: 16,
@@ -32,8 +35,9 @@ class AppStyles{
       fontSize: 17,
       fontWeight: FontWeight.w500,
   );
-  static TextStyle headLineStyle4 = const TextStyle(
+  static TextStyle headLineStyle4 = TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w500,
+      color: Colors.grey.shade500
   );
 }

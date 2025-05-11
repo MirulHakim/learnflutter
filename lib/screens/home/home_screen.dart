@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:learning/base/res/media.dart';
 import 'package:learning/base/res/styles/app_styles.dart';
 import 'package:learning/base/utils/all_json.dart';
+import 'package:learning/base/utils/app_routes.dart';
 import 'package:learning/base/widgets/app_double_text.dart';
 import 'package:learning/base/widgets/ticket_view.dart';
 import 'package:learning/screens/home/widgets/hotel.dart';
@@ -72,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                   )
                   ),
                 const SizedBox(height:40),
-                AppDoubleText(bigText: 'Hotels', smallText: 'View all', func: () => print("hello there"),),
+                AppDoubleText(bigText: 'Hotels', smallText: 'View all', func: () => Navigator.pushNamed(context, AppRoutes.allHotels)),
                 const SizedBox(height:20),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
